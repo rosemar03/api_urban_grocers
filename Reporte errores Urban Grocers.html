@@ -1,0 +1,3118 @@
+<html
+        xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Jira</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\,";
+    mso-displayed-thousand-separator:"\.";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#205081" height="30">
+        <td colspan="12">
+            <img src="https://rmhdzr.atlassian.net/images/icon-jira-family-logo.png" width="57" height="30" border="0" alt="Jira">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="12">
+            <a href="https://rmhdzr.atlassian.net/issues/?jql=project+%3D+%22RMHR1G4S%22+ORDER+BY+created+DESC">Jira</a>
+        </td>
+    </tr>
+    <tr>
+                <td colspan="12">
+            Mostrando <strong>40</strong> incidencias como en <strong>22/oct/24 9:51 PM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable" class="aui " border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                                                        Tipo de Incidencia
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                                                        Clave
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                                                        Resumen
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                                                        Persona asignada
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                                                        Informador
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                                                        Prioridad
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                                                        Estado
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                                                        Resolución
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                                                        Creada
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-description" data-id="description">
+                                                        Descripción
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-environment" data-id="environment">
+                                                        Entorno
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-thumbnail" data-id="thumbnail">
+                                                        Imágenes
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow10109" rel="10109" data-issuekey="RMHR1G4S-42" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-42" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-42">RMHR1G4S-42</a>
+</td>
+                                            <td class="summary"><p>
+                No marca error al utilizar caracteres especiales en el nombre de usuario
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 30/sep/24 8:23 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST a /api/v1/courier con caracteres especiales en el nombre de usuario en el cuerpo de la solicitud.<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{noformat}{<br/>
+    &quot;login&quot;: &quot;m$%$&quot;,<br/>
+    &quot;password&quot;: &quot;1234&quot;,<br/>
+    &quot;firstName&quot;: &quot;&quot;<br/>
+}{noformat}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+201 Created<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-09-30 201358 caracteres especiales nombre de usuario.png|width=1430,height=832,alt=&quot;Captura de pantalla 2024-09-30 201358 caracteres especiales nombre de usuario.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+ 
+    </td>
+                                            <td class="environment">            {noformat}curl --location &#39;https://cnt-bb9be08b-52f8-469b-ac89-9969b19cf8b8.containerhub.tripleten-services.com/api/v1/courier&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;login&quot;: &quot;m$%$&quot;,<br/>
+    &quot;password&quot;: &quot;1234&quot;,<br/>
+    &quot;firstName&quot;: &quot;&quot;<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-42" href="https://rmhdzr.atlassian.net/secure/attachment/10153/Captura+de+pantalla+2024-09-30+201358+caracteres+especiales+nombre+de+usuario.png">
+            Captura de pantalla 2024-09-30 201358 caracteres especiales nombre de usuario.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10074" rel="10074" data-issuekey="RMHR1G4S-41" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-41" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-41">RMHR1G4S-41</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuando hay números negativos en el peso del pedido en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 4:47 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora igual a 9, cantidad de artículos igual a 15 y peso del pedido igual a -5.9 en el cuerpo de la solicitud.<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15,<br/>
+    &quot;productsWeight&quot;: -5.9<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 164427 error números negativos en peso de pedido.png|width=665,height=764,alt=&quot;Captura de pantalla 2024-06-12 164427 error números negativos en peso de pedido.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-4bdbcf37-4fab-4979-9dc4-f6e0057366e9.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15,<br/>
+    &quot;productsWeight&quot;: -5.9<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-41" href="https://rmhdzr.atlassian.net/secure/attachment/10103/Captura+de+pantalla+2024-06-12+164427+error+n%C3%BAmeros+negativos+en+peso+de+pedido.png">
+            Captura de pantalla 2024-06-12 164427 error números negativos en peso de pedido.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10073" rel="10073" data-issuekey="RMHR1G4S-40" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-40" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-40">RMHR1G4S-40</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuando hay números negativos en el conteo de artículos en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 4:43 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora igual a 9, cantidad de artículos igual a -15 y peso del pedido igual a 5.9 en el cuerpo de la solicitud.<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: -15,<br/>
+    &quot;productsWeight&quot;: 5.9<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 164007 error números negativos en conteo de artículos.png|width=665,height=747,alt=&quot;Captura de pantalla 2024-06-12 164007 error números negativos en conteo de artículos.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-4bdbcf37-4fab-4979-9dc4-f6e0057366e9.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: -15,<br/>
+    &quot;productsWeight&quot;: 5.9<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-40" href="https://rmhdzr.atlassian.net/secure/attachment/10102/Captura+de+pantalla+2024-06-12+164007+error+n%C3%BAmeros+negativos+en+conteo+de+art%C3%ADculos.png">
+            Captura de pantalla 2024-06-12 164007 error números negativos en conteo de artículos.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10072" rel="10072" data-issuekey="RMHR1G4S-39" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-39" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-39">RMHR1G4S-39</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuando falta el  parámetro de conteo de artículos en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 4:39 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora igual a 9, con 15 en cantidad de artículos y sin parámetro de peso del pedido  en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15<br/>
+<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 163737 error falta parámetro peso de pedido.png|width=665,height=747,alt=&quot;Captura de pantalla 2024-06-12 163737 error falta parámetro peso de pedido.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-4bdbcf37-4fab-4979-9dc4-f6e0057366e9.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15<br/>
+    <br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-39" href="https://rmhdzr.atlassian.net/secure/attachment/10101/Captura+de+pantalla+2024-06-12+163737+error+falta+par%C3%A1metro+peso+de+pedido.png">
+            Captura de pantalla 2024-06-12 163737 error falta parámetro peso de pedido.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10071" rel="10071" data-issuekey="RMHR1G4S-38" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-38" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-38">RMHR1G4S-38</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuando falta el  parámetro de conteo de artículos en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 4:35 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora igual a 9, sin cantidad de artículos y peso del pedido igual a 5.9 en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+<br/>
+{noformat}&quot;productsWeight&quot;: 5.9{noformat}<br/>
+<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 162833 error falta parámetro conteo de artículos.png|width=1076,height=770,alt=&quot;Captura de pantalla 2024-06-12 162833 error falta parámetro conteo de artículos.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-4bdbcf37-4fab-4979-9dc4-f6e0057366e9.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+<br/>
+    &quot;productsWeight&quot;: 5.9<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-38" href="https://rmhdzr.atlassian.net/secure/attachment/10100/Captura+de+pantalla+2024-06-12+162833+error+falta+par%C3%A1metro+conteo+de+art%C3%ADculos.png">
+            Captura de pantalla 2024-06-12 162833 error falta parámetro conteo de artículos.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10070" rel="10070" data-issuekey="RMHR1G4S-37" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-37" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-37">RMHR1G4S-37</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuando se introduce una matriz vacía en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 1:40 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST a /api/v1/kits/:id/products con una matriz vacía en el cuerpo de la solicitud.<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+Parámetros de ruta: id=2<br/>
+{<br/>
+ &quot;productsList&quot;: [<br/>
+ ]<br/>
+ }<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 133632 error matriz vacía.png|width=1075,height=761,alt=&quot;Captura de pantalla 2024-06-12 133632 error matriz vacía.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-2327e27e-6f4a-4dd3-afab-0ad32bc77913.containerhub.tripleten-services.com/api/v1/kits/2/products&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+ &quot;productsList&quot;: [<br/>
+ ]<br/>
+ }&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-37" href="https://rmhdzr.atlassian.net/secure/attachment/10099/Captura+de+pantalla+2024-06-12+133632+error+matriz+vac%C3%ADa.png">
+            Captura de pantalla 2024-06-12 133632 error matriz vacía.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10069" rel="10069" data-issuekey="RMHR1G4S-36" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-36" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-36">RMHR1G4S-36</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuando se introduce una cadena vacía en cantidad en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 1:31 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST a /api/v1/kits/:id/products con una ID de kit igual a 2 en la URL y ID de producto igual a 1 y cantidad igual a &quot;&quot; en el cuerpo de la solicitud.<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+Parámetros de ruta: id=2<br/>
+{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 1,<br/>
+ &quot;quantity&quot;:<br/>
+&quot;&quot;<br/>
+ }<br/>
+ ]<br/>
+ }<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 132828 error cadena vacía en cantidad.png|width=1078,height=768,alt=&quot;Captura de pantalla 2024-06-12 132828 error cadena vacía en cantidad.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-442eeacb-09bb-44cf-8ed9-02854d9ef086.containerhub.tripleten-services.com/api/v1/kits/2/products&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 1,<br/>
+ &quot;quantity&quot;:<br/>
+&quot;&quot;<br/>
+ }<br/>
+ ]<br/>
+ }&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-36" href="https://rmhdzr.atlassian.net/secure/attachment/10098/Captura+de+pantalla+2024-06-12+132828+error+cadena+vac%C3%ADa+en+cantidad.png">
+            Captura de pantalla 2024-06-12 132828 error cadena vacía en cantidad.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10068" rel="10068" data-issuekey="RMHR1G4S-35" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-35" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-35">RMHR1G4S-35</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuando se introduce una cadena en cantidad en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 1:23 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST a /api/v1/kits/:id/products con una ID de kit igual a 2 en la URL y ID de producto igual a 1 y cantidad igual a &quot;12345&quot; en el cuerpo de la solicitud.<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+Parámetros de ruta: id=2<br/>
+{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 1,<br/>
+ &quot;quantity&quot;:<br/>
+&quot;12345&quot;<br/>
+ }<br/>
+ ]<br/>
+ }<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 132047 error cadena en cantidad.png|width=1081,height=764,alt=&quot;Captura de pantalla 2024-06-12 132047 error cadena en cantidad.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-ac155e87-48d3-4876-85b9-90411ce49ab7.containerhub.tripleten-services.com/api/v1/kits/2/products&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 1,<br/>
+ &quot;quantity&quot;:<br/>
+&quot;12345&quot;<br/>
+ }<br/>
+ ]<br/>
+ }&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-35" href="https://rmhdzr.atlassian.net/secure/attachment/10097/Captura+de+pantalla+2024-06-12+132047+error+cadena+en+cantidad.png">
+            Captura de pantalla 2024-06-12 132047 error cadena en cantidad.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10067" rel="10067" data-issuekey="RMHR1G4S-34" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-34" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-34">RMHR1G4S-34</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuandose agrega una cantidad negativa en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 1:13 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST a /api/v1/kits/:id/products con una ID de kit igual a 2 en la URL y ID de producto igual a 1 y cantidad igual a -1 en el cuerpo de la solicitud.<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+Parámetros de ruta: id=2<br/>
+{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 1,<br/>
+ &quot;quantity&quot;:<br/>
+-1<br/>
+ }<br/>
+ ]<br/>
+ }<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 130922 error cantidad negativa.png|width=1076,height=767,alt=&quot;Captura de pantalla 2024-06-12 130922 error cantidad negativa.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-1e5f388b-356f-4c57-b214-81a4f8f8d617.containerhub.tripleten-services.com/api/v1/kits/2/products&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 1,<br/>
+ &quot;quantity&quot;:<br/>
+-1<br/>
+ }<br/>
+ ]<br/>
+ }&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-34" href="https://rmhdzr.atlassian.net/secure/attachment/10096/Captura+de+pantalla+2024-06-12+130922+error+cantidad+negativa.png">
+            Captura de pantalla 2024-06-12 130922 error cantidad negativa.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10066" rel="10066" data-issuekey="RMHR1G4S-33" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-33" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-33">RMHR1G4S-33</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuando se introduce cantidad igual a 0 en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 1:07 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST a /api/v1/kits/:id/products con una ID de kit igual a 2 en la URL y ID de producto igual a 1 en el cuerpo de la solicitud y cantidad igual a 0<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+Parámetros de ruta: id=2<br/>
+{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 1,<br/>
+ &quot;quantity&quot;:<br/>
+ 0<br/>
+ }<br/>
+ ]<br/>
+ }<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error cantidad igual a 0.png|width=1076,height=766,alt=&quot;Captura de pantalla error cantidad igual a 0.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-1e5f388b-356f-4c57-b214-81a4f8f8d617.containerhub.tripleten-services.com/api/v1/kits/2/products&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;<br/>
+{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 1,<br/>
+ &quot;quantity&quot;:<br/>
+ 0<br/>
+ }<br/>
+ ]<br/>
+ }&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-33" href="https://rmhdzr.atlassian.net/secure/attachment/10095/Captura+de+pantalla+error+cantidad+igual+a+0.png">
+            Captura de pantalla error cantidad igual a 0.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10065" rel="10065" data-issuekey="RMHR1G4S-32" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-32" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-32">RMHR1G4S-32</a>
+</td>
+                                            <td class="summary"><p>
+                No arroja error cuando falta ID de producto en el cuerpo de la solicitud
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 1:02 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST a /api/v1/kits/:id/products con una ID de kit igual a 2 en la URL y sin ID en el cuerpo de la solicitud.<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+Parámetros de ruta: id=2<br/>
+{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;quantity&quot;:<br/>
+ 1<br/>
+ }<br/>
+ ]<br/>
+ }<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 125523 error sin id de producto.png|width=1073,height=764,alt=&quot;Captura de pantalla 2024-06-12 125523 error sin id de producto.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-1e5f388b-356f-4c57-b214-81a4f8f8d617.containerhub.tripleten-services.com/api/v1/kits/2/products&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;<br/>
+{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;quantity&quot;:<br/>
+ 1<br/>
+ }<br/>
+ ]<br/>
+ }&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-32" href="https://rmhdzr.atlassian.net/secure/attachment/10094/Captura+de+pantalla+2024-06-12+125523+error+sin+id+de+producto.png">
+            Captura de pantalla 2024-06-12 125523 error sin id de producto.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10064" rel="10064" data-issuekey="RMHR1G4S-31" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-31" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-31">RMHR1G4S-31</a>
+</td>
+                                            <td class="summary"><p>
+                No marca error al agregar un ID inexistente de producto
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 12/jun/24 12:22 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST a /api/v1/kits/:id/products con una ID de kit igual a 2 en la URL y ID de producto igual a 95 en el cuerpo de la solicitud.<br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+Parámetros de ruta: id=2<br/>
+{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 95,<br/>
+ &quot;quantity&quot;:<br/>
+ 1<br/>
+ }<br/>
+ ]<br/>
+ }<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK <br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-12 121556 error producto inexistente.png|width=1079,height=766,alt=&quot;Captura de pantalla 2024-06-12 121556 error producto inexistente.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-043c3c2b-d646-450a-9e70-4ab117b7b60b.containerhub.tripleten-services.com/api/v1/kits/2/products&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+ &quot;productsList&quot;: [<br/>
+ {<br/>
+ &quot;id&quot;: 95,<br/>
+ &quot;quantity&quot;:<br/>
+ 1<br/>
+ }<br/>
+ ]<br/>
+ } <br/>
+<br/>
+&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-31" href="https://rmhdzr.atlassian.net/secure/attachment/10093/Captura+de+pantalla+2024-06-12+121556+error+producto+inexistente.png">
+            Captura de pantalla 2024-06-12 121556 error producto inexistente.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10063" rel="10063" data-issuekey="RMHR1G4S-30" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-30" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-30">RMHR1G4S-30</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar un número con decimales en la cantidad de artículos debería arrojar un error 400
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 11/jun/24 6:41 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15.5,<br/>
+    &quot;productsWeight&quot;: 5.9<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 bad request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-11 183720 error decimales en artículos.png|width=1076,height=765,alt=&quot;Captura de pantalla 2024-06-11 183720 error decimales en artículos.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-ef0b22ba-b39a-4e4f-8af5-0f429616c664.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15.5,<br/>
+    &quot;productsWeight&quot;: 5.9<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-30" href="https://rmhdzr.atlassian.net/secure/attachment/10092/Captura+de+pantalla+2024-06-11+183720+error+decimales+en+art%C3%ADculos.png">
+            Captura de pantalla 2024-06-11 183720 error decimales en artículos.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10062" rel="10062" data-issuekey="RMHR1G4S-29" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-29" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-29">RMHR1G4S-29</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar caracteres especiales en la cantidad de productos debería arrojar un error 400 bad request
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 11/jun/24 6:27 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: &quot;$%&amp;&quot;,<br/>
+    &quot;productsWeight&quot;: 1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 bad request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-11 181613 error caracteres especiales en productos.png|width=1079,height=761,alt=&quot;Captura de pantalla 2024-06-11 181613 error caracteres especiales en productos.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-ef0b22ba-b39a-4e4f-8af5-0f429616c664.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: &quot;$%&amp;&quot;,<br/>
+    &quot;productsWeight&quot;: 1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-29" href="https://rmhdzr.atlassian.net/secure/attachment/10091/Captura+de+pantalla+2024-06-11+181613+error+caracteres+especiales+en+productos.png">
+            Captura de pantalla 2024-06-11 181613 error caracteres especiales en productos.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10061" rel="10061" data-issuekey="RMHR1G4S-28" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-28" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-28">RMHR1G4S-28</a>
+</td>
+                                            <td class="summary"><p>
+                Al ingresar hora 23, 1 artículo y 0.1kg debería arrojar client delivery cost de 0 y false en is it posible to deliver
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 11/jun/24 6:06 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 23,<br/>
+    &quot;productsCount&quot;: 1,<br/>
+    &quot;productsWeight&quot;: 0.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 3,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: false,<br/>
+    &quot;hostDeliveryCost&quot;: 3,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 5<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-11 180139 error hora 23 1 artículo 0.1kg.png|width=1082,height=765,alt=&quot;Captura de pantalla 2024-06-11 180139 error hora 23 1 artículo 0.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-ef0b22ba-b39a-4e4f-8af5-0f429616c664.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 23,<br/>
+    &quot;productsCount&quot;: 1,<br/>
+    &quot;productsWeight&quot;: 0.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-28" href="https://rmhdzr.atlassian.net/secure/attachment/10090/Captura+de+pantalla+2024-06-11+180139+error+hora+23+1+art%C3%ADculo+0.1kg.png">
+            Captura de pantalla 2024-06-11 180139 error hora 23 1 artículo 0.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10060" rel="10060" data-issuekey="RMHR1G4S-27" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-27" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-27">RMHR1G4S-27</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 16 artículos con 6.1 kg de peso de pedido el client delivery cost debería ser de 9 y no de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 11/jun/24 1:37 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 5<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-11 132356 error 16 artículos 6.1kg.png|width=1073,height=767,alt=&quot;Captura de pantalla 2024-06-11 132356 error 16 artículos 6.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-da72fbd9-f3fd-4d9e-9312-6c60c9a978c2.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-27" href="https://rmhdzr.atlassian.net/secure/attachment/10089/Captura+de+pantalla+2024-06-11+132356+error+16+art%C3%ADculos+6.1kg.png">
+            Captura de pantalla 2024-06-11 132356 error 16 artículos 6.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10059" rel="10059" data-issuekey="RMHR1G4S-26" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-26" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-26">RMHR1G4S-26</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 15 artículos con 6.1 kg de peso de pedido el client delivery cost debería ser de 9 y no de 0
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 11/jun/24 1:23 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-11 132103 error 15 artículos 6.1kg.png|width=1080,height=763,alt=&quot;Captura de pantalla 2024-06-11 132103 error 15 artículos 6.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-da72fbd9-f3fd-4d9e-9312-6c60c9a978c2.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-26" href="https://rmhdzr.atlassian.net/secure/attachment/10088/Captura+de+pantalla+2024-06-11+132103+error+15+art%C3%ADculos+6.1kg.png">
+            Captura de pantalla 2024-06-11 132103 error 15 artículos 6.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10058" rel="10058" data-issuekey="RMHR1G4S-25" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-25" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-25">RMHR1G4S-25</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 14 artículos con 6.1 kg de peso de pedido el client delivery cost debería ser de 9 y no de 0
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 11/jun/24 1:20 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 14,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-11 131731 error 14 artículos 6.1kg.png|width=1079,height=761,alt=&quot;Captura de pantalla 2024-06-11 131731 error 14 artículos 6.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-da72fbd9-f3fd-4d9e-9312-6c60c9a978c2.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 14,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-25" href="https://rmhdzr.atlassian.net/secure/attachment/10087/Captura+de+pantalla+2024-06-11+131731+error+14+art%C3%ADculos+6.1kg.png">
+            Captura de pantalla 2024-06-11 131731 error 14 artículos 6.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10057" rel="10057" data-issuekey="RMHR1G4S-24" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-24" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-24">RMHR1G4S-24</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 10 artículos con 6.1 kg de peso de pedido el client delivery cost debería ser de 9 y no de 0
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 11/jun/24 1:15 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 10,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-11 124707 error 10 artículos 6.1kg.png|width=1073,height=767,alt=&quot;Captura de pantalla 2024-06-11 124707 error 10 artículos 6.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-0b3227c3-592a-4b6d-b8d8-cb29ef09c6ef.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 10,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-24" href="https://rmhdzr.atlassian.net/secure/attachment/10086/Captura+de+pantalla+2024-06-11+124707+error+10+art%C3%ADculos+6.1kg.png">
+            Captura de pantalla 2024-06-11 124707 error 10 artículos 6.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10056" rel="10056" data-issuekey="RMHR1G4S-23" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-23" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-23">RMHR1G4S-23</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 9 artículos con 6.1 kg de peso de pedido el client delivery cost debería ser de 9 y no de 0
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 11:29 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 232700 error 9 artículos 6.1kg.png|width=1081,height=762,alt=&quot;Captura de pantalla 2024-06-10 232700 error 9 artículos 6.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-497ae7c2-74a8-4c35-be09-19f9fc0fcd7a.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-23" href="https://rmhdzr.atlassian.net/secure/attachment/10085/Captura+de+pantalla+2024-06-10+232700+error+9+art%C3%ADculos+6.1kg.png">
+            Captura de pantalla 2024-06-10 232700 error 9 artículos 6.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10055" rel="10055" data-issuekey="RMHR1G4S-22" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-22" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-22">RMHR1G4S-22</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 8 artículos con 6.1 kg de peso de pedido el client delivery cost debería ser de 9 y no de 0
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 11:26 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 232358 error 8 artículos 6.1kg.png|width=1072,height=764,alt=&quot;Captura de pantalla 2024-06-10 232358 error 8 artículos 6.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-497ae7c2-74a8-4c35-be09-19f9fc0fcd7a.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 6.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-22" href="https://rmhdzr.atlassian.net/secure/attachment/10084/Captura+de+pantalla+2024-06-10+232358+error+8+art%C3%ADculos+6.1kg.png">
+            Captura de pantalla 2024-06-10 232358 error 8 artículos 6.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10054" rel="10054" data-issuekey="RMHR1G4S-21" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-21" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-21">RMHR1G4S-21</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 16 artículos con 6 kg de peso de pedido el client delivery cost debería ser de 9 y no de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 11:19 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 6<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 5<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 231726 error 16 artículos 6kg.png|width=1070,height=761,alt=&quot;Captura de pantalla 2024-06-10 231726 error 16 artículos 6kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 6<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-21" href="https://rmhdzr.atlassian.net/secure/attachment/10083/Captura+de+pantalla+2024-06-10+231726+error+16+art%C3%ADculos+6kg.png">
+            Captura de pantalla 2024-06-10 231726 error 16 artículos 6kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10053" rel="10053" data-issuekey="RMHR1G4S-20" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-20" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-20">RMHR1G4S-20</a>
+</td>
+                                            <td class="summary"><p>
+                Es posible agregar 8 artículos con 6 kg de peso de pedido
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 11:16 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 6<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error 8 artículos 6kg.png|width=1079,height=761,alt=&quot;Captura de pantalla error 8 artículos 6kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 6<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-20" href="https://rmhdzr.atlassian.net/secure/attachment/10066/Captura+de+pantalla+error+8+art%C3%ADculos+6kg.png">
+            Captura de pantalla error 8 artículos 6kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10052" rel="10052" data-issuekey="RMHR1G4S-19" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-19" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-19">RMHR1G4S-19</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 16 artículos con 5.9 kg de peso de pedido el client delivery cost debería ser de 9 y no de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 11:11 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 5.9<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 5<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 230930 error 16 artículos 5.9kg.png|width=1079,height=760,alt=&quot;Captura de pantalla 2024-06-10 230930 error 16 artículos 5.9kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 5.9<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-19" href="https://rmhdzr.atlassian.net/secure/attachment/10082/Captura+de+pantalla+2024-06-10+230930+error+16+art%C3%ADculos+5.9kg.png">
+            Captura de pantalla 2024-06-10 230930 error 16 artículos 5.9kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10051" rel="10051" data-issuekey="RMHR1G4S-18" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-18" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-18">RMHR1G4S-18</a>
+</td>
+                                            <td class="summary"><p>
+                Es posible agregar 8 artículos con 5.9 kg de peso de pedido
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 11:07 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 5.9<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error 8 artículos 5.9kg.png|width=1079,height=766,alt=&quot;Captura de pantalla error 8 artículos 5.9kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 5.9<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-18" href="https://rmhdzr.atlassian.net/secure/attachment/10063/Captura+de+pantalla+error+8+art%C3%ADculos+5.9kg.png">
+            Captura de pantalla error 8 artículos 5.9kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10050" rel="10050" data-issuekey="RMHR1G4S-17" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-17" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-17">RMHR1G4S-17</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 16 artículos con 3.2 kg de peso de pedido el client delivery cost debería ser de 9 y no de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 11:02 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 3.2<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 5<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 230034 error 16 artículos 3.2kg.png|width=1071,height=762,alt=&quot;Captura de pantalla 2024-06-10 230034 error 16 artículos 3.2kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 3.2<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-17" href="https://rmhdzr.atlassian.net/secure/attachment/10081/Captura+de+pantalla+2024-06-10+230034+error+16+art%C3%ADculos+3.2kg.png">
+            Captura de pantalla 2024-06-10 230034 error 16 artículos 3.2kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10049" rel="10049" data-issuekey="RMHR1G4S-16" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-16" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-16">RMHR1G4S-16</a>
+</td>
+                                            <td class="summary"><p>
+                Al gregar 8 artículos con 3.2 kg de peso de pedido el delivery cost es de 3 en lugar de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 10:58 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 3.2<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 3,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 225624 error 8 artículos 3.2kg.png|width=1075,height=764,alt=&quot;Captura de pantalla 2024-06-10 225624 error 8 artículos 3.2kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 3.2<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-16" href="https://rmhdzr.atlassian.net/secure/attachment/10080/Captura+de+pantalla+2024-06-10+225624+error+8+art%C3%ADculos+3.2kg.png">
+            Captura de pantalla 2024-06-10 225624 error 8 artículos 3.2kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10048" rel="10048" data-issuekey="RMHR1G4S-15" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-15" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-15">RMHR1G4S-15</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 16 artículos con 3.1 kg de peso de pedido el client delivery cost debería ser de 9 y no de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 10:50 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 3,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 5<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 224821 error 16 productos 3.1kg.png|width=1076,height=768,alt=&quot;Captura de pantalla 2024-06-10 224821 error 16 productos 3.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-15" href="https://rmhdzr.atlassian.net/secure/attachment/10079/Captura+de+pantalla+2024-06-10+224821+error+16+productos+3.1kg.png">
+            Captura de pantalla 2024-06-10 224821 error 16 productos 3.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10047" rel="10047" data-issuekey="RMHR1G4S-14" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-14" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-14">RMHR1G4S-14</a>
+</td>
+                                            <td class="summary"><p>
+                Al agregar 16 artículos con 3 kg de peso de pedido el client delivery cost debería ser de 9 y no de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 10:37 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 9<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 3,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 5<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 223515 error 16 productos 3kg.png|width=1076,height=767,alt=&quot;Captura de pantalla 2024-06-10 223515 error 16 productos 3kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 16,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-14" href="https://rmhdzr.atlassian.net/secure/attachment/10078/Captura+de+pantalla+2024-06-10+223515+error+16+productos+3kg.png">
+            Captura de pantalla 2024-06-10 223515 error 16 productos 3kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10046" rel="10046" data-issuekey="RMHR1G4S-13" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-13" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-13">RMHR1G4S-13</a>
+</td>
+                                            <td class="summary"><p>
+                Es posible agregar 15 artículos con 3 kg de peso de pedido
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 10:34 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error 15 artículos 3kg.png|width=1075,height=763,alt=&quot;Captura de pantalla error 15 artículos 3kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 15,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-13" href="https://rmhdzr.atlassian.net/secure/attachment/10059/Captura+de+pantalla+error+15+art%C3%ADculos+3kg.png">
+            Captura de pantalla error 15 artículos 3kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10045" rel="10045" data-issuekey="RMHR1G4S-12" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-12" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-12">RMHR1G4S-12</a>
+</td>
+                                            <td class="summary"><p>
+                Es posible agregar 14 artículos con 3 kg de peso de pedido
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 10:31 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 14,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error 14 artículos 3kg.png|width=1079,height=761,alt=&quot;Captura de pantalla error 14 artículos 3kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 14,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-12" href="https://rmhdzr.atlassian.net/secure/attachment/10058/Captura+de+pantalla+error+14+art%C3%ADculos+3kg.png">
+            Captura de pantalla error 14 artículos 3kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10044" rel="10044" data-issuekey="RMHR1G4S-11" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-11" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-11">RMHR1G4S-11</a>
+</td>
+                                            <td class="summary"><p>
+                Es posible agregar 10 artículos con 3 kg de peso de pedido
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 10:27 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 10,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error 10 artículos 3kg.png|width=1079,height=761,alt=&quot;Captura de pantalla error 10 artículos 3kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-96507b58-4277-4003-90ec-2bfc35b6e0fe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 10,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-11" href="https://rmhdzr.atlassian.net/secure/attachment/10057/Captura+de+pantalla+error+10+art%C3%ADculos+3kg.png">
+            Captura de pantalla error 10 artículos 3kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10043" rel="10043" data-issuekey="RMHR1G4S-10" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-10" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-10">RMHR1G4S-10</a>
+</td>
+                                            <td class="summary"><p>
+                Al gregar 8 artículos con 3.1 kg de peso de pedido el delivery cost es de 3 en lugar de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 10:19 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 3,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 215247 error 8 productos 3.1kg.png|width=1073,height=765,alt=&quot;Captura de pantalla 2024-06-10 215247 error 8 productos 3.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-50210323-b832-467d-91a8-c325ed92cdfe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 8,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-10" href="https://rmhdzr.atlassian.net/secure/attachment/10077/Captura+de+pantalla+2024-06-10+215247+error+8+productos+3.1kg.png">
+            Captura de pantalla 2024-06-10 215247 error 8 productos 3.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10042" rel="10042" data-issuekey="RMHR1G4S-9" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-9" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-9">RMHR1G4S-9</a>
+</td>
+                                            <td class="summary"><p>
+                Al gregar 7 artículos con 3.1 kg de peso de pedido el delivery cost es de 3 en lugar de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 9:50 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 7,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 3,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 214753 error 7 productos 3.1kg.png|width=1080,height=768,alt=&quot;Captura de pantalla 2024-06-10 214753 error 7 productos 3.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-50210323-b832-467d-91a8-c325ed92cdfe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 7,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-9" href="https://rmhdzr.atlassian.net/secure/attachment/10076/Captura+de+pantalla+2024-06-10+214753+error+7+productos+3.1kg.png">
+            Captura de pantalla 2024-06-10 214753 error 7 productos 3.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10041" rel="10041" data-issuekey="RMHR1G4S-8" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-8" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-8">RMHR1G4S-8</a>
+</td>
+                                            <td class="summary"><p>
+                Al gregar 1 artículo con 3.1 kg de peso de pedido el delivery cost es de 3 en lugar de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 9:47 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 1,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 3,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-11 163328 error 1 producto 3.1kg.png|width=1077,height=768,alt=&quot;Captura de pantalla 2024-06-11 163328 error 1 producto 3.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-50210323-b832-467d-91a8-c325ed92cdfe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 1,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-8" href="https://rmhdzr.atlassian.net/secure/attachment/10075/Captura+de+pantalla+2024-06-11+163328+error+1+producto+3.1kg.png">
+            Captura de pantalla 2024-06-11 163328 error 1 producto 3.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10040" rel="10040" data-issuekey="RMHR1G4S-7" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-7" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-7">RMHR1G4S-7</a>
+</td>
+                                            <td class="summary"><p>
+                Al gregar 0 artículos con 3.1 kg de peso de pedido el delivery cost es de 3 en lugar de 5
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 9:42 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 0,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 5,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+{<br/>
+    &quot;name&quot;: &quot;Order and Go&quot;,<br/>
+    &quot;isItPossibleToDeliver&quot;: true,<br/>
+    &quot;hostDeliveryCost&quot;: 3,<br/>
+    &quot;toBeDeliveredTime&quot;: {<br/>
+        &quot;min&quot;: 20,<br/>
+        &quot;max&quot;: 25<br/>
+    },<br/>
+    &quot;clientDeliveryCost&quot;: 0<br/>
+}<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla 2024-06-10 213757 error 0 prodcutos 3.1kg.png|width=1075,height=766,alt=&quot;Captura de pantalla 2024-06-10 213757 error 0 prodcutos 3.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-50210323-b832-467d-91a8-c325ed92cdfe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 0,<br/>
+    &quot;productsWeight&quot;: 3.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-7" href="https://rmhdzr.atlassian.net/secure/attachment/10074/Captura+de+pantalla+2024-06-10+213757+error+0+prodcutos+3.1kg.png">
+            Captura de pantalla 2024-06-10 213757 error 0 prodcutos 3.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10039" rel="10039" data-issuekey="RMHR1G4S-6" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-6" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-6">RMHR1G4S-6</a>
+</td>
+                                            <td class="summary"><p>
+                Es posible agregar 9 artículos con 3 kg de peso de pedido
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 9:33 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error 9 artículos 3kg.png|width=1077,height=766,alt=&quot;Captura de pantalla error 9 artículos 3kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-50210323-b832-467d-91a8-c325ed92cdfe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 3<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-6" href="https://rmhdzr.atlassian.net/secure/attachment/10051/Captura+de+pantalla+error+9+art%C3%ADculos+3kg.png">
+            Captura de pantalla error 9 artículos 3kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10038" rel="10038" data-issuekey="RMHR1G4S-5" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-5" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-5">RMHR1G4S-5</a>
+</td>
+                                            <td class="summary"><p>
+                Es posible agregar 9 artículos con 2.9 kg de peso de pedido
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 9:26 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 2.9<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error 9 artículos 2.9kg.png|width=1076,height=766,alt=&quot;Captura de pantalla error 9 artículos 2.9kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-50210323-b832-467d-91a8-c325ed92cdfe.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 2.9<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-5" href="https://rmhdzr.atlassian.net/secure/attachment/10050/Captura+de+pantalla+error+9+art%C3%ADculos+2.9kg.png">
+            Captura de pantalla error 9 artículos 2.9kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10037" rel="10037" data-issuekey="RMHR1G4S-4" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-4" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-4">RMHR1G4S-4</a>
+</td>
+                                            <td class="summary"><p>
+                Es posible agregar 9 artículos con 0.1 kg de peso de pedido
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 9:13 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 0.1<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error 9 artículos 0.1kg.png|width=1075,height=769,alt=&quot;Captura de pantalla error 9 artículos 0.1kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-818ed486-5fee-4144-b933-d04562cd460c.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 0.1<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-4" href="https://rmhdzr.atlassian.net/secure/attachment/10049/Captura+de+pantalla+error+9+art%C3%ADculos+0.1kg.png">
+            Captura de pantalla error 9 artículos 0.1kg.png
+        </a>
+    </td>
+                    </tr>
+
+
+                <tr id="issuerow10036" rel="10036" data-issuekey="RMHR1G4S-3" class="issuerow">
+                                            <td class="issuetype">    Error
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="RMHR1G4S-3" href="https://rmhdzr.atlassian.net/browse/RMHR1G4S-3">RMHR1G4S-3</a>
+</td>
+                                            <td class="summary"><p>
+                Es posible agregar 9 artículos con 0 kg de peso de pedido
+    </p>
+</td>
+                                            <td class="assignee">    <em>sin asignar</em>
+</td>
+                                            <td class="reporter">            Rosa María Hernández Ramírez
+    </td>
+                                            <td class="priority">           Medium
+    </td>
+                                            <td class="status">
+                <span class=" jira-issue-status-lozenge aui-lozenge jira-issue-status-lozenge-blue-gray jira-issue-status-lozenge-new aui-lozenge-subtle jira-issue-status-lozenge-max-width-medium" data-tooltip="&lt;span class=&quot;jira-issue-status-tooltip-title&quot;&gt;Tareas por hacer&lt;/span&gt;">Tareas por hacer</span>    </td>
+                                            <td class="resolution">    <em>Sin resolver</em>
+</td>
+                                            <td class="created"> 10/jun/24 9:02 PM </td>
+                                            <td class="description">            Pasos<br/>
+<br/>
+# Envía una solicitud POST /order-and-go/v1/delivery con la hora, cantidad de artículos y peso del pedido en el cuerpo de la solicitud. <br/>
+<br/>
+Cuerpo de la solicitud<br/>
+<br/>
+{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 0<br/>
+}<br/>
+<br/>
+Resultado esperado<br/>
+<br/>
+400 Bad Request<br/>
+<br/>
+Resultado actual<br/>
+<br/>
+200 OK<br/>
+<br/>
+<br/>
+<br/>
+!Captura de pantalla error 9 artículos 0 kg.png|width=1085,height=807,alt=&quot;Captura de pantalla error 9 artículos 0 kg.png&quot;!<br/>
+<br/>
+<br/>
+<br/>
+{noformat}curl --location &#39;https://cnt-38e063b2-a694-468f-8eb9-2eb35d06c709.containerhub.tripleten-services.com/order-and-go/v1/delivery&#39; \<br/>
+--header &#39;Content-Type: application/json&#39; \<br/>
+--data &#39;{<br/>
+    &quot;deliveryTime&quot;: 9,<br/>
+    &quot;productsCount&quot;: 9,<br/>
+    &quot;productsWeight&quot;: 0<br/>
+}&#39;{noformat}
+    </td>
+                                            <td class="environment"></td>
+                                            <td class="thumbnail">            <a aria-label="Seleccionar para descargar la imagen para RMHR1G4S-3" href="https://rmhdzr.atlassian.net/secure/attachment/10048/Captura+de+pantalla+error+9+art%C3%ADculos+0+kg.png">
+            Captura de pantalla error 9 artículos 0 kg.png
+        </a>
+    </td>
+                    </tr>
+        </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="12"><font size="1">
+        Generado a las Wed Oct 23 03:51:29 UTC 2024 por Rosa María Hernández Ramírez usando JIRA 1001.0.0-SNAPSHOT#100270-rev:041f2cd34af8ee4f4b14e12c286b1618fe95ff70.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>
